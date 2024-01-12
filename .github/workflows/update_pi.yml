@@ -1,4 +1,4 @@
-name: Update Raspberry Pi
+name: Update Raspberry Pi2
 
 on:
   push:
