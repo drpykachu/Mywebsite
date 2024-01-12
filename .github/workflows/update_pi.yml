@@ -1,0 +1,21 @@
+name: Update Raspberry Pi
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-repo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Update Raspberry Pi
+        run: |
+          # Add your commands here to update the Raspberry Pi repository
+          # For example, pull changes from the GitHub repository
+          git pull origin main
+
