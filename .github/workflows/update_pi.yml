@@ -15,6 +15,8 @@ jobs:
 
       - name: Update Raspberry Pi
         run: |
+          cd /var/www/html
+          git pull origin main
           # Add your commands here to update the Raspberry Pi repository
           # For example, pull changes from the GitHub repository
           git pull origin main
