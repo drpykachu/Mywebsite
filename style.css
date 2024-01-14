@@ -43,11 +43,22 @@ body, html {
 }
 
 .dot {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     background-color: white;
     border-radius: 50%;
     top: 50%;
-    left: 100px;
+    left: 75px;
     position:absolute;
   }
+
+  .headshot {
+    clip-path: circle();    
+    margin-left: 75px;
+    /* margin-top: 40%; */
+    width: 200px;
+    height: 250px;
+    
+}
+
+  
