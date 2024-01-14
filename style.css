@@ -1,0 +1,14 @@
+body {
+    background-image: url(hills.png);
+    background-position: center top;
+    background-size: 100% auto;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: red;
+}
+
