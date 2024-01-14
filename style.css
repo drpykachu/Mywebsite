@@ -1,9 +1,3 @@
-body {
-    background-image: url(hills.png);
-    background-position: center top;
-    background-size: 100% auto;
-}
-
 h1 {
     color: blue;
 }
@@ -12,3 +6,48 @@ p {
     color: red;
 }
 
+img {
+    width: 100%;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.image_background {
+    /* The image used */
+    background-image: url("hills.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: rgba(255, 255, 255, 0);
+    font-size: xx-large;
+  }
+
+.square {
+    width: 400px;
+    height: 100%;
+    background: rgb(2, 159, 221);
+}
+
+.dot {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 100px;
+    position:absolute;
+  }
