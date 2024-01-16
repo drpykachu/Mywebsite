@@ -54,10 +54,11 @@ body, html {
 
   .headshot {
     clip-path: circle();    
-    margin-left: 75px;
-    /* margin-top: 40%; */
+    margin-left: 101px;
+    margin-top: 461px;
     width: 200px;
-    height: 250px;
+    height: 280px;
+    position:absolute;
     
 }
 
