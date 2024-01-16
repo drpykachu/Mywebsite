@@ -28,38 +28,51 @@ body, html {
     background-size: cover;
 }
 
-.top-left {
+.background_square {
+    width: 100%;
+    height: 1000px;
+    background: rgb(235, 235, 235);
+}
+
+.column_left {
+    width: 33.3%;
+    height: 500px;
+    background: rgb(255, 194, 103);
     position: absolute;
-    top: 8px;
-    left: 16px;
-    color: rgba(255, 255, 255, 0);
-    font-size: xx-large;
-  }
-
-.square {
-    width: 400px;
-    height: 100%;
-    background: rgb(2, 159, 221);
 }
 
-.dot {
-    height: 250px;
-    width: 250px;
-    background-color: white;
-    border-radius: 50%;
-    top: 50%;
-    left: 75px;
-    position:absolute;
-  }
-
-  .headshot {
-    clip-path: circle();    
-    margin-left: 101px;
-    margin-top: 461px;
-    width: 200px;
-    height: 280px;
-    position:absolute;
-    
+.column_center {
+    width: 33.4%;
+    height: 500px;
+    background: rgb(247, 150, 150);
+    position: absolute;
+    left: 33.3%;
 }
 
-  
+.column_right {
+    width: 33.3%;
+    height: 500px;
+    background: rgb(176, 225, 240);
+    position: absolute;
+    left: 66.7%;
+}
+
+.column_bar_top{
+    border-radius: 15px;
+    width: 80%;
+    height: 10px;
+    background: rgb(136, 134, 138);
+    position: absolute;
+    top: 1%;
+    left: 10%;
+}
+
+.column_bar_bot{
+    border-radius: 15px;
+    width: 80%;
+    height: 10px;
+    background: rgb(136, 134, 138);
+    position: absolute;
+    top: 97%;
+    left: 10%;
+}
