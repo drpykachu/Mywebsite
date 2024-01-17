@@ -37,7 +37,7 @@ body, html {
 .column_left {
     width: 33.3%;
     height: 500px;
-    background: rgb(255, 194, 103);
+    background: rgb(0, 194, 103);
     position: absolute;
 }
 
