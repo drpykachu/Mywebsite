@@ -11,4 +11,5 @@ def publications():
      return render_template('publications_tab.html')
 
 if __name__ == '__main__':
-    app.run(debug=False,host='0.0.0.0',port=80)
+    app.run(debug=False,host='0.0.0.0',port=8000)
+# i think this is goo
