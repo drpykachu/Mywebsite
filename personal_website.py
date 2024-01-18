@@ -13,8 +13,6 @@ def index():
 #      return render_template('publications_tab.html')
 
 if __name__ == '__main__':
-    # app.run(ssl_context=('/etc/letsencrypt/live/anthonyrpyka.servebeer.com/fullchain.pem', '/etc/letsencrypt/live/anthonyrpyka.servebeer.com/privkey.pem'), debug=False,port = 80,host = '0.0.0.0')
-    app.run(debug=True,port = 80000,host = '0.0.0.0')
+    app.run(ssl_context=('/etc/letsencrypt/live/anthonyrpyka.servebeer.com/fullchain.pem', '/etc/letsencrypt/live/anthonyrpyka.servebeer.com/privkey.pem'), debug=False,port = 80,host = '0.0.0.0')
+    # app.run(debug=True,port = 8000,host = '0.0.0.0')
 # i think this is good 2
-if __name__ == '__main__':
-    # app.run(ssl_context=('/etc/letsencrypt/live/your_domain.com/fullchain.pem', '/etc/letsencrypt/live/your_domain.com/privkey.pem'), host='0.0.0.0', port=443, debug=True)
