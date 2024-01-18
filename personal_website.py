@@ -6,9 +6,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-# @app.route('/publications/')
-# def publications():
-#      return render_template('publications_tab.html')
+@app.route('/Biography/')
+def publications():
+     return render_template('Biography.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True,port = 8000,host = '0.0.0.0')
