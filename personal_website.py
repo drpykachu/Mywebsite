@@ -8,10 +8,10 @@ talisman = Talisman(app, content_security_policy=None)
 def index():
     return render_template('index.html')
 
-@app.route('/publications/')
-def publications():
-     return render_template('publications_tab.html')
+# @app.route('/publications/')
+# def publications():
+#      return render_template('publications_tab.html')
 
 if __name__ == '__main__':
-    app.run(ssl_context=('/etc/letsencrypt/live/anthonyrpyka.servebeer.com.pem', '/etc/letsencrypt/live/anthonyrpyka.servebeer.com/privkey.pem'), debug=True,port = 8000)
+    app.run(ssl_context=('/etc/letsencrypt/live/anthonyrpyka.servebeer.com/fullchain.pem', '/etc/letsencrypt/live/anthonyrpyka.servebeer.com/privkey.pem'), debug=True,port = 8000)
 # i think this is good 2
