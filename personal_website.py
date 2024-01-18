@@ -7,7 +7,7 @@ def index():
     return render_template('index.html')
 
 @app.route('/Biography/')
-def publications():
+def Biography():
      return render_template('Biography.html')
 
 
