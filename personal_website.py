@@ -14,5 +14,5 @@ def index():
 
 if __name__ == '__main__':
     # app.run(ssl_context=('/etc/letsencrypt/live/anthonyrpyka.servebeer.com/fullchain.pem', '/etc/letsencrypt/live/anthonyrpyka.servebeer.com/privkey.pem'), debug=False,host = '0.0.0.0')
-    app.run(debug=True,port = 80,host = '0.0.0.0')
+    app.run(debug=True,port = 8000,host = '0.0.0.0')
 # i think this is good 2
