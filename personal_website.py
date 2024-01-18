@@ -13,5 +13,5 @@ def index():
 #      return render_template('publications_tab.html')
 
 if __name__ == '__main__':
-    app.run(ssl_context=('/etc/letsencrypt/live/anthonyrpyka.servebeer.com/fullchain.pem', '/etc/letsencrypt/live/anthonyrpyka.servebeer.com/privkey.pem'), debug=True,port = 443)
+    app.run(ssl_context=('/etc/letsencrypt/live/anthonyrpyka.servebeer.com/fullchain.pem', '/etc/letsencrypt/live/anthonyrpyka.servebeer.com/privkey.pem'), debug=True,port = 443,host = '0.0.0.0')
 # i think this is good 2
