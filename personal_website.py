@@ -8,9 +8,7 @@ def index():
 
 @app.route('/Biography')
 def Biography():
-     return 'Yummy cakes!'
-
-# render_template('Biography.html')
+     return render_template('Biography.html')
 
 
 if __name__ == '__main__':
