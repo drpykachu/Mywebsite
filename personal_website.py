@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from flask_talisman import Talisman
 
 app = Flask(__name__)
-# talisman = Talisman(app, content_security_policy=None)
+talisman = Talisman(app, content_security_policy=None)
 
 @app.route('/')
 def index():
