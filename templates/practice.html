@@ -2,21 +2,114 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
-    <title>Smooth Banner Drop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
+        .accordion {
+            background-color: #aa2929;
+            color: #444;
+            cursor: pointer;
+            /* padding: 18px; */
+            width: 60px;
+            text-align: left;
+            align-items: left;
+            outline: none;
+            font-size: 40px;
+            transition: 0.4s;
+            /* display: block; */
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #eee;
+        }
+
+        .ease-in {
+            transition: max-height 1s ease-in;
+        }
+
+        /* Slower transition when exiting */
+        .ease-out {
+            transition: max-height 0.1s ease-out;
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: #eee;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1s ease-in-out;
+            transition: max-height 0.5s ease-out;
+
+        }
+
+        .accordian-content a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+            width: 100vw;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 40px;
+        }
+
+        .accordian-content a.first-element {
+            padding-top: 50px;
+            /* Adjust the padding as needed for the last element */
+        }
+
+        .accordian-content a.last-element {
+            padding-bottom: 100px;
+            /* Adjust the padding as needed for the last element */
+        }
+        .header-box{
+            background-color: #eee;
+            padding: 18px;
+            width: 100%;
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-
-    <button id="toggleButton">Toggle Banner</button>
-    <div class="banner-container">
-        <div class="banner">
-            <h1>Your Banner Content</h1>
-            <p>This is the content of your banner.</p>
+    <div class = "header-box"> 
+    <button class="accordion">&#8801</button>
+    Dr. Anthony Pyka 
+    <div class="panel">
+        <div class="accordian-content">
+            <a href="/Biography" class="first-element">Biography</a>
+            <a href="#">Option 2</a>
+            <a href="#" class="last-element">Option 3</a>
         </div>
     </div>
-    <script src="{{url_for('static', filename='dropdown.js')}}"></script>
+</div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+
+            // Open the first accordion initially
+            if (i === 0) {
+                acc[i].click();
+            }
+        }
+    </script>
 
 </body>
 

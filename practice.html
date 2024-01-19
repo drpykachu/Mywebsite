@@ -10,17 +10,17 @@
         }
 
         .accordion {
-            background-color: #aa2929;
+            background-color: #eee;
             color: #444;
             cursor: pointer;
-            /* padding: 18px; */
-            width: 60px;
+            padding: 18px;
+            width: 100%;
+            border: none;
             text-align: left;
-            align-items: left;
             outline: none;
             font-size: 40px;
             transition: 0.4s;
-            /* display: block; */
+            display: block;
         }
 
         .active,
@@ -55,7 +55,6 @@
             width: 100vw;
             padding-top: 10px;
             padding-bottom: 10px;
-            font-size: 40px;
         }
 
         .accordian-content a.first-element {
@@ -67,28 +66,20 @@
             padding-bottom: 100px;
             /* Adjust the padding as needed for the last element */
         }
-        .header-box{
-            background-color: #eee;
-            padding: 18px;
-            width: 100%;
-            font-size: 40px;
-            text-align: center;
-        }
     </style>
 </head>
 
 <body>
-    <div class = "header-box"> 
+
     <button class="accordion">&#8801</button>
-    Dr. Anthony Pyka 
     <div class="panel">
         <div class="accordian-content">
-            <a href="/Biography" class="first-element">Biography</a>
+            <a href="#" class="first-element">Option 1</a>
             <a href="#">Option 2</a>
             <a href="#" class="last-element">Option 3</a>
         </div>
     </div>
-</div>
+
     <script>
         var acc = document.getElementsByClassName("accordion");
         var i;
