@@ -113,8 +113,9 @@
         </div>
     </div>
 
-    <img class ="seattle-skyline" src="hills.png" alt="Hills">
-    
+    <!-- <img class ="seattle-skyline" src="hills.png" alt="Hills"> -->
+    <img src="{{ url_for('static', filename='images/hills.png')}}" alt="Your Image">
+
     <script>
         var acc = document.getElementsByClassName("accordion");
         var i;
