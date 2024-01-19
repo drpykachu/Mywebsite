@@ -23,8 +23,8 @@
             position: absolute;
             background-color: #eee;
             text-align: center;
-            /* margin-bottom: 10px;
-            margin-top: 10px; */
+            padding-bottom: 10px;
+            padding-top: 10px;
             width: 100%;
             top: 0;
             z-index: 0;
@@ -46,6 +46,7 @@
             top: 0;
             border: none;
             margin-top: 8px;
+            padding-bottom: 10px;
         }
 
         .active,
@@ -64,13 +65,13 @@
         .panel {
             position: absolute;
             z-index: 2;
-            padding: 0 18px;
+            /* padding: 0 18px; */
             background-color: #eee;
             max-height: 0;
             overflow: hidden;
             transition: max-height 1s ease-in-out;
             transition: max-height 0.5s ease-out;
-            top: 60px; /* Adjust the top value to place the panel below the button */
+            top: 80px; /* Adjust the top value to place the panel below the button */
         }
 
         .accordian-content a {
