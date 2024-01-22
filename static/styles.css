@@ -79,6 +79,7 @@ a {
   justify-content: center;
   height: 120vh;
   margin: 0;
+  width: auto;
 }
 
 .accordian-content a {
