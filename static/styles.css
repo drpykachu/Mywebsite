@@ -72,7 +72,7 @@ a {
   top: 5rem; /* Adjust the top value to place the panel below the button */
 }
 
-/* .resume-viewer{
+.resume-viewer{
   padding-top: 6.9rem;
   display: flex;
   align-items: center;
@@ -80,7 +80,7 @@ a {
   height: 120vh;
   margin: 0;
   width: 95%;
-} */
+}
 
 .resume-viewer{
   padding-top: 6.9rem;
@@ -92,15 +92,6 @@ a {
 }
 
 
-#pdfContainer {
-  width: 80%; /* Adjust the width based on your preference */
-}
-
-#pdfFrame {
-  width: 100%;
-  height: 100%;
-  border: none; /* Remove border for a cleaner look */
-}
 
 .accordian-content a {
   display: block;

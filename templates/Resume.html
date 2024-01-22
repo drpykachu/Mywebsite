@@ -28,12 +28,7 @@
 
 <!--    SPACE TO PUT PAGE ITEMS -->
 
-<div id="pdfContainer">
-    <!-- Embed PDF using iframe with dynamic height -->
-    <iframe id="resume-viewer" src="../static/Anthony Pyka Resume.pdf"></iframe>
-  </div>
-
-<!-- <iframe class = 'resume-viewer' src="../static/Anthony Pyka Resume.pdf"></iframe> -->
+<iframe class = 'resume-viewer' src="../static/Anthony Pyka Resume.pdf"></iframe>
 
 <!--    SPACE TO PUT PAGE ITEMS -->
 
@@ -59,17 +54,6 @@
                 acc[i].click();
             }
         }
-
-        function resizeIframe() {
-      var iframe = document.getElementById('pdfFrame');
-      if (iframe) {
-        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-      }
-    }
-
-    document.getElementById('pdfFrame').onload = resizeIframe;
-    window.onresize = resizeIframe;
-    
     </script>
 
 </body>
