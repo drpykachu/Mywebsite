@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
-            font-size: 5vw;
+            /* font-size: 5vw; */
             margin: 0;
             align-items: left;
             /* font-family: Arial, sans-serif; */
@@ -28,26 +28,27 @@
             width: 100%;
             top: 0;
             z-index: 0;
-            height: 7vw;
+            font-size: clamp(16px, 40px, 40px);        
             font-family: 'Times New Roman', Times, serif,;
-            font-size: clamp(1rem, 4vw, 2rem);        }
+            font-size: clamp(16px, 40px, 40px);        
+        }
 
         .accordion {
             background-color: #eee;
             position: absolute;
             color: black;
             cursor: pointer;
-            width: 10vw;
+            width: 8rem;
             text-align: center;
             align-items: left;
             outline: #eee;
-            font-size: 100%;
+            font-size: clamp(16px, 40px, 40px);              
             transition: 0.4s;
             z-index: 2;
             top: 0;
             border: none;
-            margin-top: 1vw;
-            padding-bottom: 1vw;
+            margin-top: clamp(16px, 32px, 40px);
+            /* padding-bottom: clamp(16px, 40px, 40px); */
         }
 
         .active,
@@ -71,7 +72,7 @@
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.5s ease-out;
-            top: 8vw; /* Adjust the top value to place the panel below the button */
+            top: 5rem; /* Adjust the top value to place the panel below the button */
         }
 
         .accordian-content a {
@@ -82,7 +83,7 @@
             width: 100vw;
             padding-top: 1vw;
             padding-bottom: 1vw;
-            font-size: 50%;
+            font-size: clamp(16px, 2rem, 30px); 
         }
 
         .accordian-content a.first-element {
@@ -131,7 +132,7 @@
             });
 
             // Open the first accordion initially
-            if (i === 1) {
+            if (i === 0) {
                 acc[i].click();
             }
         }
