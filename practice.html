@@ -3,120 +3,34 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            /* font-size: 5vw; */
-            margin: 0;
-            align-items: left;
-            /* font-family: Arial, sans-serif; */
-            
-        }
-
-        .header-box {
-            position: relative;
-            background-color: #eee;
-            align-items: left;
-            z-index: 1;
-        }
-
-        .header-text {
-            position: absolute;
-            background-color: #eee;
-            text-align: center;
-            padding-bottom: clamp(1rem, 4vw, 2rem);
-            padding-top: clamp(1rem, 4vw, 2rem);
-            width: 100%;
-            top: 0;
-            z-index: 0;
-            font-size: clamp(16px, 40px, 40px);        
-            font-family: 'Times New Roman', Times, serif,;
-            font-size: clamp(16px, 40px, 40px);        
-        }
-
-        .accordion {
-            background-color: #eee;
-            position: absolute;
-            color: black;
-            cursor: pointer;
-            width: 8rem;
-            text-align: center;
-            align-items: left;
-            outline: #eee;
-            font-size: clamp(16px, 40px, 40px);              
-            transition: 0.4s;
-            z-index: 2;
-            top: 0;
-            border: none;
-            margin-top: clamp(16px, 32px, 40px);
-            /* padding-bottom: clamp(16px, 40px, 40px); */
-        }
-
-        .active,
-        .accordion:hover {
-            background-color: #eee;
-        }
-
-        .ease-in {
-            transition: max-height 1s ease-in;
-        }
-
-        .ease-out {
-            transition: max-height 0.1s ease-out;
-        }
-
-        .panel {
-            position: absolute;
-            z-index: 2;
-            /* padding: 0 18px; */
-            background-color: #eee;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease-out;
-            top: 5rem; /* Adjust the top value to place the panel below the button */
-        }
-
-        .accordian-content a {
-            display: block;
-            text-decoration: none;
-            color: #333;
-            text-align: center;
-            width: 100vw;
-            padding-top: 1vw;
-            padding-bottom: 1vw;
-            font-size: clamp(16px, 2rem, 30px); 
-        }
-
-        .accordian-content a.first-element {
-            padding-top: 5vw;
-        }
-
-        .accordian-content a.last-element {
-            padding-bottom: 5vw;
-        }
-
-        .seattle-skyline{
-            width:100%;
-        }
-    </style>
+    <link rel="stylesheet" href="static/styles.css">
 </head>
 
 <body>
 
     <div class="header-box">
-        <div class="header-text">Dr. Anthony Pyka</div>
+        <div class="header-text">
+            <a href="/" class="first-element">Dr. Anthony Pyka</a>
+        </div>
         <button class="accordion">&#8801;</button>
         <div class="panel">
             <div class="accordian-content">
                 <a href="/" class="first-element">Home</a>
-                <a href="/Resume">Resume</a>
-                <a href="/Biography">Biography</a>
-                <a href="#">Publications</a>
-                <a href="#" class="last-element">Projects</a>
+                <a href="templates/Resume.html">Resume</a>
+                <a href="/templates/Biography.html">Biography</a>
+                <a href="/templates/Publications.html">Publications</a>
+                <a href="/templates/Projects.html" class="last-element">Projects</a>
             </div>
         </div>
     </div> 
 
-    <img class ="seattle-skyline" src="/static/images/hills.png" alt="Hills">
+<!--    SPACE TO PUT PAGE ITEMS -->
+
+<img class ="seattle-skyline" src="/static/images/hills.png" alt="Hills">
+
+<!--    SPACE TO PUT PAGE ITEMS -->
+
+
 
     <script>
         var acc = document.getElementsByClassName("accordion");
@@ -134,7 +48,7 @@
             });
 
             // Open the first accordion initially
-            if (i === 1) {
+            if (i === 0) {
                 acc[i].click();
             }
         }

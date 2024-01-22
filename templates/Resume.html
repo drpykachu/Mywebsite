@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html>
 
-<style>
-    .sample-text{
-        font-size: x-large;
-    }
-</style>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/styles.css">
+</head>
 
-<body class = 'sample-text'> Page under maintenance, come back later!</body>
-<body class = 'sample-text'> This site is a personal project which ungergoes constant updates</body>
+<body>
+
+    <div class="header-box">
+        <div class="header-text">
+            <a href="/" class="first-element">Dr. Anthony Pyka</a>
+        </div>
+        <button class="accordion">&#8801;</button>
+        <div class="panel">
+            <div class="accordian-content">
+                <a href="/" class="first-element">Home</a>
+                <a href="templates/Resume.html">Resume</a>
+                <a href="/templates/Biography.html">Biography</a>
+                <a href="/templates/Publications.html">Publications</a>
+                <a href="/templates/Projects.html" class="last-element">Projects</a>
+            </div>
+        </div>
+    </div> 
+
+<!--    SPACE TO PUT PAGE ITEMS -->
+
+<img class ="seattle-skyline" src="/static/images/hills.png" alt="Hills">
+
+<!--    SPACE TO PUT PAGE ITEMS -->
+
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+
+            // Open the first accordion initially
+            if (i === 0) {
+                acc[i].click();
+            }
+        }
+    </script>
+
+</body>
 
 </html>
