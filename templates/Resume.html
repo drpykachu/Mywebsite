@@ -3,7 +3,9 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../static/styles.css">
+
 </head>
 
 <body>
@@ -15,8 +17,8 @@
         <button class="accordion">&#8801;</button>
         <div class="panel">
             <div class="accordian-content">
-                <a href="/" class="first-element">Home</a>
-                <a href="templates/Resume.html">Resume</a>
+                <a href="/templates/" class="first-element">Home</a>
+                <a href="/templates/Resume.html">Resume</a>
                 <a href="/templates/Biography.html">Biography</a>
                 <a href="/templates/Publications.html">Publications</a>
                 <a href="/templates/Projects.html" class="last-element">Projects</a>
@@ -26,7 +28,7 @@
 
 <!--    SPACE TO PUT PAGE ITEMS -->
 
-<img class ="seattle-skyline" src="/static/images/hills.png" alt="Hills">
+<iframe class = 'resume-viewer' src="../static/Anthony Pyka Resume.pdf"></iframe>
 
 <!--    SPACE TO PUT PAGE ITEMS -->
 
@@ -48,7 +50,7 @@
             });
 
             // Open the first accordion initially
-            if (i === 0) {
+            if (i === 1) {
                 acc[i].click();
             }
         }

@@ -72,6 +72,15 @@ a {
   top: 5rem; /* Adjust the top value to place the panel below the button */
 }
 
+.resume-viewer{
+  padding-top: 6.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120vh;
+  margin: 0;
+}
+
 .accordian-content a {
   display: block;
   text-decoration: none;
