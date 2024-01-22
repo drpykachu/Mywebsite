@@ -10,6 +10,18 @@ def index():
 def Biography():
      return render_template('Biography.html')
 
+@app.route('/Resume')
+def Resume():
+     return render_template('Resume.html')
+
+@app.route('/Publications')
+def Publications():
+     return render_template('Publications.html')
+
+@app.route('/Projects')
+def Projects():
+     return render_template('Projects.html')
+
 
 if __name__ == '__main__':
     app.run(debug=False,port = 8000,host = '0.0.0.0')
