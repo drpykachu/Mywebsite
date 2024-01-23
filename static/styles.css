@@ -21,9 +21,9 @@ body {
   padding-top: clamp(1rem, 4vw, 2rem);
   width: 100%;
   top: 0;
-  z-index: 0;
+  z-index: 8;
   font-size: clamp(16px, 40px, 40px);        
-  font-family: 'Times New Roman', Times, serif,;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: clamp(16px, 40px, 40px);       
    
 }
@@ -43,7 +43,7 @@ a {
   outline: #eee;
   font-size: clamp(16px, 40px, 40px);              
   transition: 0.4s;
-  z-index: 2;
+  z-index: 10;
   top: 0;
   border: none;
   margin-top: clamp(16px, 32px, 40px);
@@ -82,6 +82,15 @@ a {
   width: 95%;
 }
 
+
+
+.maintenance{
+  padding-top: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .resume-viewer{
   padding-top: 6.9rem;
   display: flex;
@@ -112,6 +121,29 @@ a {
   padding-bottom: 5vw;
 }
 
-.seattle-skyline{
+.landing-photo{
+  padding-top: 6.9rem;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
   width:100%;
+  z-index: 1;
+  margin: 0;
+  overflow: hidden;
+  /* position: relative; */
+}
+
+
+.drop-container{
+  margin: 0;
+  overflow: hidden;
+}
+
+
+
+.canvas {
+  padding-top: 6.9rem;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
