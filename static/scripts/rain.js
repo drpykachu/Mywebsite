@@ -14,13 +14,13 @@ window.onload = function () {
             angle: theta * (Math.PI / 180), // Random angle for diagonal movement
             x: Math.random() * (canvas.width + Math.cos(theta)* (Math.PI / 180)),
             y: Math.random() * (img.height  + Math.sin(theta)* (Math.PI / 180)) ,
-            speed: 3 + Math.random() * 3,
+            speed: 2 + Math.random() * 3,
             length: 25 + Math.random() * 10,
             width: 5 + Math.random() * 4,
         };
     }
 
-    for (var i = 0; i < 500; i++) {
+    for (var i = 0; i < 400; i++) {
         drops.push(createDrop());
     }
 
