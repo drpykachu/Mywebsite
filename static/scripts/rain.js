@@ -15,8 +15,8 @@ window.onload = function () {
             x: Math.random() * (canvas.width + Math.cos(theta)* (Math.PI / 180)),
             y: Math.random() * (img.height  + Math.sin(theta)* (Math.PI / 180)) ,
             speed: 3 + Math.random() * 3,
-            length: 40 + Math.random() * 10,
-            width: 7 + Math.random() * 4,
+            length: 25 + Math.random() * 10,
+            width: 5 + Math.random() * 4,
         };
     }
 
