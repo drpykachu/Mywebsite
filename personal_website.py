@@ -16,7 +16,7 @@ def Resume():
 
 @app.route('/Resume_Print')
 def Resume_Print():
-     return render_template('Resume-Print.html')
+     return render_template('Resume_Print.html')
 
 @app.route('/Publications')
 def Publications():
