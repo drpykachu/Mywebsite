@@ -72,35 +72,12 @@ a {
   top: 5rem; /* Adjust the top value to place the panel below the button */
 }
 
-.resume-viewer{
-  padding-top: 6.9rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 120vh;
-  margin: 0;
-  width: 95%;
-}
-
-
-
 .maintenance{
   padding-top: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.resume-viewer{
-  padding-top: 6.9rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-}
-
-
 
 .accordian-content a {
   display: block;
@@ -133,6 +110,22 @@ a {
   /* position: relative; */
 }
 
+.resume-viewer{
+  padding-top: 6.9rem;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  z-index: 1;
+  margin: 0;
+  overflow: hidden;
+  /* position: relative; */
+}
+
+.active,
+.resume-viewer:hover {
+  background-color: #eee;
+}
 
 .drop-container{
   margin: 0;
