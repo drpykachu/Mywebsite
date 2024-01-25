@@ -112,20 +112,41 @@ a {
 
 .resume-viewer{
   padding-top: 6.9rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: clamp(8.5in, 4vw, 100%);
+  background-color: #9e9d9d;
+  /* background-color: #eee; */
+  /* width: ; */
+}
+
+.resume-background{
+  padding-top: 1rem;
+  /* display: block; */
+  /* height: 11in; */
+  /* width: clamp(8.5in, 4vw, 100%); */
+  background-color: #9e9d9d;
+  width: 100%;
+}
+
+.resume-fullpage{
+  /* padding-top: 6.9rem; */
   /* display: flex; */
   align-items: center;
   justify-content: center;
-  width:100%;
+  width:99%;
+  height:12in;
   z-index: 1;
   margin: 0;
   overflow: hidden;
   /* position: relative; */
 }
 
-.active,
+/* .active,
 .resume-viewer:hover {
   background-color: #eee;
-}
+} */
 
 .drop-container{
   margin: 0;

@@ -14,8 +14,8 @@ def Biography():
 def Resume():
      return render_template('Resume.html')
 
-@app.route('/Resume-Print')
-def Resume():
+@app.route('/Resume_Print')
+def Resume_Print():
      return render_template('Resume-Print.html')
 
 @app.route('/Publications')
