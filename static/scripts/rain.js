@@ -9,9 +9,15 @@ window.onresize = function () {
 function initializeRainAnimation() {
     var img = document.querySelector('.landing-photo');
     var canvas = document.getElementById('rainCanvas');
+    var container = document.querySelector('.zoom-container'); // Use querySelector to get the first element
+    
+    var containerHeight = container.clientHeight;
     canvas.width = img.width;
     canvas.height = img.height;
-
+    // canvas.height = containerHeight; // Set canvas height to the height of zoomcontainer
+    
+    
+    
     var ctx = canvas.getContext('2d');
     var drops = [];
     var theta = 110;

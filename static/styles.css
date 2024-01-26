@@ -1,9 +1,9 @@
-body {
+body, html {
   /* font-size: 5vw; */
   margin: 0;
   align-items: left;
   /* font-family: Arial, sans-serif; */
-  
+  padding: 0;
 }
 
 .header-box {
@@ -22,16 +22,17 @@ body {
   width: 100%;
   top: 0;
   z-index: 8;
-  font-size: clamp(16px, 40px, 40px);        
+  font-size: clamp(16px, 40px, 40px);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: clamp(16px, 40px, 40px);       
-   
+  font-size: clamp(16px, 40px, 40px);
+
 }
 
 a {
   text-decoration: none;
   color: black;
-}   
+}
+
 .accordion {
   background-color: #eee;
   position: absolute;
@@ -41,7 +42,7 @@ a {
   text-align: center;
   align-items: left;
   outline: #eee;
-  font-size: clamp(16px, 40px, 40px);              
+  font-size: clamp(16px, 40px, 40px);
   transition: 0.4s;
   z-index: 10;
   top: 0;
@@ -69,10 +70,11 @@ a {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
-  top: 5rem; /* Adjust the top value to place the panel below the button */
+  top: 5rem;
+  /* Adjust the top value to place the panel below the button */
 }
 
-.maintenance{
+.maintenance {
   padding-top: 8rem;
   display: flex;
   align-items: center;
@@ -87,7 +89,7 @@ a {
   width: 100vw;
   padding-top: 1vw;
   padding-bottom: 1vw;
-  font-size: clamp(16px, 2rem, 30px); 
+  font-size: clamp(16px, 2rem, 30px);
 }
 
 .accordian-content a.first-element {
@@ -98,19 +100,9 @@ a {
   padding-bottom: 5vw;
 }
 
-.landing-photo{
-  padding-top: 6.9rem;
-  /* display: flex; */
-  align-items: center;
-  justify-content: center;
-  width:100%;
-  z-index: 1;
-  margin: 0;
-  overflow: hidden;
-  /* position: relative; */
-}
 
-.resume-viewer{
+/* ############################# Resume Pages ################################## */
+.resume-viewer {
   padding-top: 6.9rem;
   display: block;
   margin-left: auto;
@@ -121,7 +113,7 @@ a {
   /* width: ; */
 }
 
-.resume-background{
+.resume-background {
   padding-top: 1rem;
   /* display: block; */
   /* height: 11in; */
@@ -130,34 +122,51 @@ a {
   width: 100%;
 }
 
-.resume-fullpage{
+.resume-fullpage {
   /* padding-top: 6.9rem; */
   /* display: flex; */
   align-items: center;
   justify-content: center;
-  width:99%;
-  height:12in;
+  width: 99%;
+  height: 12in;
   z-index: 1;
   margin: 0;
   overflow: hidden;
   /* position: relative; */
 }
+/* ############################################################################# */
 
-/* .active,
-.resume-viewer:hover {
-  background-color: #eee;
-} */
+/* ############################# Landing Page ################################## */
 
-.drop-container{
+.drop-container {
+  padding-top: 6.9rem;
   margin: 0;
   overflow: hidden;
+  width: 100%; /* Set the width of the container */
+  /* height: 500px; Set the height of the container */
 }
 
+.zoom-container {
+  /* overflow: hidden; */
+  width: 100%; /* Take the full width of the viewport */
+  height: 50rem;
+}
 
+.landing-photo {
+  width: 100%; /* Make sure the image takes the full width of the container */
+  min-width: 100%; /* Ensure the image does not become too small */
+  height: auto; /* Maintain the aspect ratio */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  transform-origin: 30% 70%; /* Set the transformation origin off-center (adjust values as needed) */
+  object-fit: cover; /* Control how the image is resized to fit the container */
+}
 
 .canvas {
   padding-top: 6.9rem;
   position: absolute;
   top: 0;
   left: 0;
+  /* height: 50rem; */
 }
+
+/* ############################################################################# */
