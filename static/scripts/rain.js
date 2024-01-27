@@ -10,11 +10,11 @@ function initializeRainAnimation() {
     var img = document.querySelector('.landing-photo');
     var canvas = document.getElementById('rainCanvas');
     var container = document.querySelector('.zoom-container'); // Use querySelector to get the first element
-    
     var containerHeight = container.clientHeight;
+    
     canvas.width = img.width;
     canvas.height = img.height;
-    // canvas.height = containerHeight; // Set canvas height to the height of zoomcontainer
+    canvas.height = containerHeight; // Set canvas height to the height of zoomcontainer
     
     
     
@@ -69,7 +69,7 @@ function initializeRainAnimation() {
             drop.x += drop.speed * Math.cos(drop.angle);
             drop.y += drop.speed * Math.sin(drop.angle);
 
-            if (drop.y > (img.height)) {
+            if (drop.y > (img.height+10)) {
                 drop.y = -(50);
             }
             if (drop.x < 0) {
