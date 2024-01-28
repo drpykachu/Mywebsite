@@ -1,21 +1,32 @@
-window.onload = function () {
+// Debounce function
+function debounce(func, delay) {
+    let timer;
+    return function () {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        func.apply(this, arguments);
+      }, delay);
+    };
+  }
+  
+  // Your function to be executed when window stops resizing
+  function handleResize() {
     initializeRainAnimation();
-};
-
-window.onresize = function () {
+  }
+  
+  // Attach the debounced function to the window resize event
+  window.onload = function () {
     initializeRainAnimation();
-};
-
-function initializeRainAnimation() {
+    window.onresize = debounce(handleResize, 500); // You can adjust the delay (in milliseconds) as needed
+  };
+  
+  function initializeRainAnimation() {
+    // Your existing code remains unchanged
     var img = document.querySelector('.landing-photo');
     var canvas = document.getElementById('rainCanvas');
-    var container = document.querySelector('.zoom-container'); // Use querySelector to get the first element
-    var containerHeight = container.clientHeight;
-    
+  
     canvas.width = img.width;
     canvas.height = img.height;
-    canvas.height = containerHeight; // Set canvas height to the height of zoomcontainer
-    
     
     
     var ctx = canvas.getContext('2d');

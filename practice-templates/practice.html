@@ -10,12 +10,17 @@
 
 <body>
 
-    <div class="header-box">
-        <div class="header-text">
-            <a href="/practice-templates/practice.html" class="first-element">Dr. Anthony Pyka</a>
+    <div class="home-container">
+
+        <div class="heading-space"></div>
+        <div class="banner-container">
+            <button class="accordion">&#8801;</button>
+            <div class="header-box">
+                <p> Dr. Anthony Pyka </p>
+            </div>
         </div>
-        <button class="accordion">&#8801;</button>
-        <div class="panel">
+        <div class="heading-space"></div>
+        <div class="panel" id="panelbut">
             <div class="accordian-content">
                 <a href="/practice-templates/practice.html" class="first-element">Home</a>
                 <a href="/practice-templates/practice-Resume.html">Resume</a>
@@ -24,24 +29,13 @@
                 <a href="/practice-templates/practice-Projects.html" class="last-element">Projects</a>
             </div>
         </div>
-        
+
+        <img class="landing-photo" src="/static/images/skyline.jpg" alt="Zoomed Image">
+
     </div>
 
-    <div class="drop-container">
-        <div class="zoom-container" id="zoomcontainer">
-            <img class="landing-photo" src="/static/images/skyline.jpg" alt="Zoomed Image">
-            <canvas id="rainCanvas" class="canvas"></canvas>        
-        </div>
-    </div>
-
-    <div class="landing-bio">
-        hi
-    </div>
 
     <script src="../static/scripts/top-banner.js"></script>
-    <script src="../static/scripts/rain.js"></script>
-    <script src="../static/scripts/zoom.js"></script>
-
 </body>
 
 </html>
