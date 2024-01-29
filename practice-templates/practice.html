@@ -30,14 +30,23 @@
             </div>
         </div>
 
-        <img class="landing-photo" src="/static/images/skyline.jpg" alt="Zoomed Image" id="landingImage">
+        
+        <div class="zoom-container" id="zoomcontainer">
+            <img class="landing-photo" src="/static/images/skyline.jpg" alt="Zoomed Image" id="landingImage">
+            <canvas id="rainCanvas" class="canvas"></canvas>
+        </div>
+        
+        <div class="heading-space"></div>
+        <div class="landing-text1" id="text1">Welcome!</div><br>
+        <div class="landing-text2" id="text2">This is my personal page</div>
 
     </div>
 
 
     <script src="../static/scripts/top-banner.js"></script>
-    <!-- <script src="../static/scripts/zoom.js"></script> -->
-
+    <script src="../static/scripts/zoom.js"></script>
+    <script src="../static/scripts/rain.js"></script>
+    
 </body>
 
 </html>

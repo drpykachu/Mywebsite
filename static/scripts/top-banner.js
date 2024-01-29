@@ -2,10 +2,12 @@ var acc = document.getElementsByClassName("accordion");
 var panel = document.getElementById('panelbut');
 var landingImage = document.getElementById('landingImage');
 
+
 function setPanelStyles() {
     if (landingImage && panel && panel.style.maxHeight) {
         var imageRect = landingImage.getBoundingClientRect();
         panel.style.top = imageRect.top + 'px';
+
         // You may want to add other styles or adjustments here based on your needs
     }
 }
