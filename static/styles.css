@@ -1,13 +1,56 @@
 body, html {
-  /* font-size: 5vw; */
   margin: 0;
   align-items: left;
-  /* font-family: Arial, sans-serif; */
   padding: 0;
 }
 
 
+/* ############################# Publications ################################## */
+.publications-container{
+  max-width: 1366px;
+  margin: 0 auto;
+}
 
+.publications-text1{
+  text-align: center;
+  font-size: x-large;
+  padding: 10px 10px 10px 10px;
+}
+
+.publications-text2{
+  font-size: medium;
+  text-align: justify;
+  padding: 10px 10px 10px 10px;
+}
+
+.publications-text3{
+  font-size: medium;
+  text-align: left;
+  padding: 10px 10px 10px 10px;
+}
+
+.accordion-pub {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active-pub, .accordion-pub:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel-pub {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease; /* Animation duration and easing */
+}
 
 /* ############################# Resume Pages ################################## */
 .resume-viewer {
@@ -75,7 +118,7 @@ body, html {
 }
 
 .heading-space{
-  background-color: #eee;
+  background-color: #287abd;
   width: 100%;
   height: clamp(10px, 1vw, 100px);
 }
@@ -147,6 +190,8 @@ a {
   overflow: hidden;
   width: 100%;
   max-height: 40rem;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -154,10 +199,10 @@ a {
   width: 100%;
   min-width: 100%;
   height: auto;
-  transition: transform 0.3s ease-in-out;
   transform-origin: 30% 70%;
   object-fit: cover;
-  z-index: 0;
+  max-height: 100vw;
+  display: block;
 }
 
 /* ------------------- */
@@ -176,7 +221,7 @@ a {
 
 .landing-text1 {
   font-size: clamp(5px, 4vw, 100px);
-  color: #001068;
+  color: #2718ac;
   position: absolute;
   text-align: center; /* Center text horizontally */
   top: 30%; /* Move the top to the middle of the container */
@@ -186,7 +231,7 @@ a {
 
 .landing-text2 {
   font-size: clamp(5px, 3vw, 100px);
-  color: #001068;
+  color: #2718ac;
   position: absolute;
   text-align: center; /* Center text horizontally */
   top: 40%; /* Move the top to the middle of the container */

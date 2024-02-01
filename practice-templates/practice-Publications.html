@@ -10,12 +10,17 @@
 
 <body>
 
-    <div class="header-box">
-        <div class="header-text">
-            <a href="/practice-templates/practice.html" class="first-element">Dr. Anthony Pyka</a>
+    <div class="home-container">
+
+        <div class="heading-space" id="spacebase1"></div>
+        <div class="banner-container">
+            <button class="accordion">&#8801;</button>
+            <div class="header-box">
+                <a href="/practice-templates/practice.html" class="first-element">Dr. Anthony Pyka</a>
+            </div>
         </div>
-        <button class="accordion">&#8801;</button>
-        <div class="panel">
+        <div class="heading-space" id="spacebase2"></div>
+        <div class="panel" id="panelbut">
             <div class="accordian-content">
                 <a href="/practice-templates/practice.html" class="first-element">Home</a>
                 <a href="/practice-templates/practice-Resume.html">Resume</a>
@@ -24,15 +29,50 @@
                 <a href="/practice-templates/practice-Projects.html" class="last-element">Projects</a>
             </div>
         </div>
+
+        <div class="publications-container">
+            <div class="publications-text1">
+                Publications
+            </div>
+            <div class="publications-text2">
+                Here is a collection of papers that I wrote in graduate school at the University of Washington.
+                The focus of these papers is the development of electrocatalysts for the oxidation of urea and splitting
+                of water in alkaline mediums. These works have been submitted and are under consideration for publishing
+                in peer-reviewed journals and are not available for reading unless requested.
+            </div>
+
+            <div class="publications-text3">
+                <b>Papers:</b>
+            </div>
+
+            <button class="accordion-pub"> 1.) Catalytic Urea Electrooxidation on Nickel-Metal Hydroxide Foams
+                For Use in A Simplified Dialysis Device</button>
+            <div class="panel-pub">
+                <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="accordion-pub"> 2.) Electrocatalytic Urea Oxidation on High Chromium and Molybdenum Nickel
+                Alloys</button>
+            <div class="panel-pub">
+                <p>Lorem ipsum...</p>
+            </div>
+            
+            <button class="accordion-pub"> 3.) Selective Nickel-Oxyhydroxide Phase Growth Through Controlled Electrochemical Cycling Procedures For Improved Oxygen Evolution</button>
+            <div class="panel-pub">
+                <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="accordion-pub"> 4.) The Impact Of Urea Electrooxidation On Nickel Oxyhydroxide Catalysts</button>
+            <div class="panel-pub">
+                <p>Lorem ipsum...</p>
+            </div>
+        </div>
+
     </div>
 
-    <!--    SPACE TO PUT PAGE ITEMS -->
-
-    <div class="maintenance">Page under maintenance! </div>
-
-    <!--    SPACE TO PUT PAGE ITEMS -->
 
     <script src="../static/scripts/top-banner.js"></script>
+    <script src="../static/scripts/accordian-pub.js"></script>
 
 </body>
 

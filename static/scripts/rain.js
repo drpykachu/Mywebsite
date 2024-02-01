@@ -8,6 +8,7 @@ function setRainStyles() {
 
   canvas.style.top = zoomRect.top + 'px';
   canvas.style.height = Math.min((imgRect.bottom - imgRect.top),(zoomRect.bottom - zoomRect.top)) + 'px';
+  // canvas.style.height = 10 + 'px';
   canvas.style.width = Math.max((imgRect.right - imgRect.left),(zoomRect.right - zoomRect.left)) + 'px';
 
   // You may want to add other styles or adjustments here based on your needs
@@ -58,13 +59,13 @@ function initializeRainAnimation() {
       angleinv: (90 - theta) * (Math.PI / 180),
       x: Math.random() * (canvas.width + Math.cos(theta * (Math.PI / 180))),
       y: Math.random() * (canvas.height + Math.sin(theta * (Math.PI / 180))),
-      speed: (2 + Math.random() * 3) / 2,
-      length: 25 + Math.random() * 10,
-      width: 5 + Math.random() * 4,
+      speed: canvas.width/800*(2 + Math.random() * 3)/2,
+      length: canvas.width/800*(25 + Math.random() * 10),
+      width: canvas.width/800*(5 + Math.random()) ,
     };
   }
 
-  for (var i = 0; i < canvas.height / 5; i++) {
+  for (var i = 0; i < canvas.width/canvas.height*50; i++) {
     drops.push(createDrop());
   }
 
