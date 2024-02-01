@@ -50,6 +50,23 @@ body, html {
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.5s ease; /* Animation duration and easing */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.abstract{
+  padding: 10px 10px 10px 10px;
+  font-size: small;
+  text-align: justify;
+}
+
+.panel-pub img {
+  padding: 10px 10px 10px 10px;
+  font-size: small;
+  max-width: clamp(10px,95%,500px);
+  /* max-width: 100%; */
+  
+  height: auto;
 }
 
 /* ############################# Resume Pages ################################## */
