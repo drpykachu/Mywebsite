@@ -58,13 +58,13 @@ body, html {
 
 .abstract{
   padding: 10px 10px 10px 10px;
-  font-size: large;
+  font-size: x-large;
   text-align: justify;
 }
 
 .panel-pub img {
   padding: 10px 10px 10px 10px;
-  font-size: large;
+  /* font-size: large; */
   max-width: clamp(10px,95%,600px);
   /* max-width: 100%; */
   
