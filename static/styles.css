@@ -18,13 +18,13 @@ body, html {
 }
 
 .publications-text2{
-  font-size: medium;
+  font-size: large;
   text-align: justify;
   padding: 10px 10px 10px 10px;
 }
 
 .publications-text3{
-  font-size: medium;
+  font-size: large;
   text-align: left;
   padding: 10px 10px 10px 10px;
 }
@@ -52,17 +52,18 @@ body, html {
   transition: max-height 0.5s ease; /* Animation duration and easing */
   margin: 0 auto;
   text-align: center;
+  font-size: large;
 }
 
 .abstract{
   padding: 10px 10px 10px 10px;
-  font-size: small;
+  font-size: large;
   text-align: justify;
 }
 
 .panel-pub img {
   padding: 10px 10px 10px 10px;
-  font-size: small;
+  font-size: large;
   max-width: clamp(10px,95%,500px);
   /* max-width: 100%; */
   
