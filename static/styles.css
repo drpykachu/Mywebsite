@@ -31,7 +31,7 @@ body, html {
 
 .accordion-pub {
   background-color: #eee;
-  color: #444;
+  color: black;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -65,7 +65,7 @@ body, html {
 .panel-pub img {
   padding: 10px 10px 10px 10px;
   font-size: large;
-  max-width: clamp(10px,95%,500px);
+  max-width: clamp(10px,95%,600px);
   /* max-width: 100%; */
   
   height: auto;
@@ -137,7 +137,7 @@ body, html {
 }
 
 .heading-space{
-  background-color: #287abd;
+  background-color: #eee;
   width: 100%;
   height: clamp(10px, 1vw, 100px);
 }
