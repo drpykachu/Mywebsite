@@ -13,18 +13,18 @@ body, html {
 
 .publications-text1{
   text-align: center;
-  font-size: x-large;
+  font-size: xx-large;
   padding: 10px 10px 10px 10px;
 }
 
 .publications-text2{
-  font-size: large;
+  font-size: x-large;
   text-align: justify;
   padding: 10px 10px 10px 10px;
 }
 
 .publications-text3{
-  font-size: large;
+  font-size: x-large;
   text-align: left;
   padding: 10px 10px 10px 10px;
 }
@@ -38,6 +38,7 @@ body, html {
   text-align: left;
   border: none;
   outline: none;
+  font-size: x-large;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
