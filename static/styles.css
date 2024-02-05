@@ -285,9 +285,7 @@ a {
 }
 
 .landingbio-img{
-  text-align: justify;
-  max-width: 50%;
-  align-items: center;
+  max-width: 30%;
   display: block;
   margin-left: auto;
   margin-right: auto;
