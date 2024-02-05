@@ -4,6 +4,25 @@ body, html {
   padding: 0;
 }
 
+/* ############################# Biography Pages ################################## */
+.biography-container{
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.biography-headertext1{
+  text-align: center;
+  font-size: xx-large;
+  padding: 10px 10px 10px 10px;
+}
+
+.biography-headertext2{
+  text-align: center;
+  font-size: x-large;
+  padding: 10px 10px 10px 10px;
+}
+
+/* ############################################################################# */
 
 /* ############################# Publications ################################## */
 .publications-container{
@@ -41,16 +60,14 @@ body, html {
   font-size: x-large;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active-pub, .accordion-pub:hover {
   background-color: #ccc;
 }
 
-/* Style the accordion panel. Note: hidden by default */
 .panel-pub {
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.5s ease; /* Animation duration and easing */
+  transition: max-height 0.5s ease; 
   margin: 0 auto;
   text-align: center;
   font-size: large;
@@ -64,12 +81,11 @@ body, html {
 
 .panel-pub img {
   padding: 10px 10px 10px 10px;
-  /* font-size: large; */
   max-width: clamp(10px,95%,600px);
-  /* max-width: 100%; */
   
   height: auto;
 }
+/* ############################################################################# */
 
 /* ############################# Resume Pages ################################## */
 .resume-viewer {
@@ -83,16 +99,11 @@ body, html {
 
 .resume-background {
   padding-top: 1vw;
-  /* display: block; */
-  /* height: 11in; */
-  /* width: clamp(8.5in, 4vw, 100%); */
   background-color: #9d9d9e;  
   width: 100%;
 }
 
 .resume-fullpage {
-  /* padding-top: 5vw; */
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   width: 99%;
@@ -100,7 +111,6 @@ body, html {
   z-index: 1;
   margin: 0;
   overflow: hidden;
-  /* position: relative; */
 }
 
 
@@ -245,7 +255,6 @@ a {
   text-align: center; /* Center text horizontally */
   top: 30%; /* Move the top to the middle of the container */
   left: 50%; /* Move the left to the middle of the container */
-  transform: translate(-50%, -50%); /* Center the element precisely */
 }
 
 .landing-text2 {
@@ -255,7 +264,36 @@ a {
   text-align: center; /* Center text horizontally */
   top: 40%; /* Move the top to the middle of the container */
   left: 50%; /* Move the left to the middle of the container */
-  transform: translate(-50%, -50%); /* Center the element precisely */
+}
+
+.landingbio-container{
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.landingbio-header{
+  text-align: center;
+  font-size: xx-large;
+  padding: 10px 10px 10px 10px;
+}
+
+.landingbio-text{
+  text-align: justify;
+  font-size: large;
+  padding: 10px 10px 10px 10px;
+  /* color: #2718ac; */
+}
+
+.landingbio-img{
+  text-align: justify;
+  max-width: 50%;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  padding: 10px 10px 10px 10px;
+  /* color: #2718ac; */
 }
 
 
