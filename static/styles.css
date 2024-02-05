@@ -1,48 +1,69 @@
-body, html {
+body,
+html {
   margin: 0;
   align-items: left;
   padding: 0;
 }
 
 /* ############################# Biography Pages ################################## */
-.biography-container{
-  max-width: 1366px;
+.biography-container {
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.biography-headertext1{
-  text-align: center;
-  font-size: xx-large;
-  padding: 10px 10px 10px 10px;
-}
-
-.biography-headertext2{
+.biography-headertext1 {
   text-align: center;
   font-size: x-large;
   padding: 10px 10px 10px 10px;
 }
 
+.biography-headertext2 {
+  text-align: justify;
+  font-size: large;
+  padding: 10px 10px 10px 10px;
+}
+
+.picturebox {
+  display: flex;
+  /* max-width: 5000px; */
+  margin: 0 auto;
+  width: 100%;
+}
+
+.picturebox-text {
+  /* flex: 1; */
+  text-align: justify;
+  font-size: large;
+  padding: 10px;
+}
+.picturebox-img {
+  max-width: 30%; /* Adjust the width as needed */
+  height: auto;
+  max-height: 30%; 
+}
+
+
 /* ############################################################################# */
 
 /* ############################# Publications ################################## */
-.publications-container{
+.publications-container {
   max-width: 1366px;
   margin: 0 auto;
 }
 
-.publications-text1{
+.publications-text1 {
   text-align: center;
   font-size: xx-large;
   padding: 10px 10px 10px 10px;
 }
 
-.publications-text2{
+.publications-text2 {
   font-size: x-large;
   text-align: justify;
   padding: 10px 10px 10px 10px;
 }
 
-.publications-text3{
+.publications-text3 {
   font-size: x-large;
   text-align: left;
   padding: 10px 10px 10px 10px;
@@ -60,20 +81,21 @@ body, html {
   font-size: x-large;
 }
 
-.active-pub, .accordion-pub:hover {
+.active-pub,
+.accordion-pub:hover {
   background-color: #ccc;
 }
 
 .panel-pub {
   overflow: hidden;
   max-height: 0;
-  transition: max-height 0.5s ease; 
+  transition: max-height 0.5s ease;
   margin: 0 auto;
   text-align: center;
   font-size: large;
 }
 
-.abstract{
+.abstract {
   padding: 10px 10px 10px 10px;
   font-size: x-large;
   text-align: justify;
@@ -81,10 +103,11 @@ body, html {
 
 .panel-pub img {
   padding: 10px 10px 10px 10px;
-  max-width: clamp(10px,95%,600px);
-  
+  max-width: clamp(10px, 95%, 600px);
+
   height: auto;
 }
+
 /* ############################################################################# */
 
 /* ############################# Resume Pages ################################## */
@@ -99,7 +122,7 @@ body, html {
 
 .resume-background {
   padding-top: 1vw;
-  background-color: #9d9d9e;  
+  background-color: #9d9d9e;
   width: 100%;
 }
 
@@ -120,14 +143,14 @@ body, html {
 /* ############################# Landing Page ################################## */
 
 /* ------ banner ----- */
-.home-container{
+.home-container {
   position: absolute;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.banner-container{
+.banner-container {
   /* position: relative; */
   width: 100%;
   display: flex;
@@ -138,15 +161,17 @@ body, html {
   z-index: 1;
   width: 90%;
   display: flex;
-  align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
+  align-items: center;
+  /* Center items vertically */
+  justify-content: center;
+  /* Center items horizontally */
   font-size: clamp(10px, 5vw, 100px);
   height: clamp(10px, 10vw, 100px);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding-right: 9.1%; 
+  padding-right: 9.1%;
 }
 
-.heading-space{
+.heading-space {
   background-color: #eee;
   width: 100%;
   height: clamp(10px, 1vw, 100px);
@@ -161,7 +186,7 @@ body, html {
   cursor: pointer;
   border: none;
   width: 10%;
-  font-size: clamp(8px, 5vw, 100px);  
+  font-size: clamp(8px, 5vw, 100px);
   /* transition: 0.4s; */
   height: clamp(10px, 10vw, 100px);
 }
@@ -209,12 +234,12 @@ a {
 }
 
 /* ------------------- */
-  
+
 /* ----- Zoom -------- */
 
 .zoom-container {
   display: block;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   overflow: hidden;
   width: 100%;
@@ -235,14 +260,16 @@ a {
 }
 
 /* ------------------- */
-  
+
 /* ----- Rain -------- */
 
 .canvas {
   top: 0;
   left: 0;
-  width: 100%; /* Adjust the width if needed */
-  height: auto; /* Allow the height to adjust proportionally */
+  width: 100%;
+  /* Adjust the width if needed */
+  height: auto;
+  /* Allow the height to adjust proportionally */
   position: absolute;
 }
 
@@ -252,39 +279,45 @@ a {
   font-size: clamp(5px, 4vw, 100px);
   color: #2718ac;
   position: absolute;
-  text-align: center; /* Center text horizontally */
-  top: 30%; /* Move the top to the middle of the container */
-  left: 50%; /* Move the left to the middle of the container */
+  text-align: center;
+  /* Center text horizontally */
+  top: 30%;
+  /* Move the top to the middle of the container */
+  left: 50%;
+  /* Move the left to the middle of the container */
 }
 
 .landing-text2 {
   font-size: clamp(5px, 3vw, 100px);
   color: #2718ac;
   position: absolute;
-  text-align: center; /* Center text horizontally */
-  top: 40%; /* Move the top to the middle of the container */
-  left: 50%; /* Move the left to the middle of the container */
+  text-align: center;
+  /* Center text horizontally */
+  top: 40%;
+  /* Move the top to the middle of the container */
+  left: 50%;
+  /* Move the left to the middle of the container */
 }
 
-.landingbio-container{
+.landingbio-container {
   max-width: 1366px;
   margin: 0 auto;
 }
 
-.landingbio-header{
+.landingbio-header {
   text-align: center;
   font-size: xx-large;
   padding: 10px 10px 10px 10px;
 }
 
-.landingbio-text{
+.landingbio-text {
   text-align: justify;
   font-size: large;
   padding: 10px 10px 10px 10px;
   /* color: #2718ac; */
 }
 
-.landingbio-img{
+.landingbio-img {
   max-width: 30%;
   display: block;
   margin-left: auto;
