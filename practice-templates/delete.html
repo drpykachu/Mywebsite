@@ -1,68 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Wrapping Around Image</title>
 <style>
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 3s;
-}
-
-.active, .accordion:hover {
-  background-color: #ccc; 
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-}
+  img {
+    float: left; /* Float the image to the left */
+    margin-right: 20px; /* Add some space between the image and the text */
+  }
 </style>
 </head>
 <body>
 
-<h2>Accordion</h2>
+<h2>Text Wrapping Around Image</h2>
 
-<button class="accordion">Section 1</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<button class="accordion">Section 2</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<button class="accordion">Section 3</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
+<img src="example.jpg" alt="Example Image" width="200" height="200">
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin, tortor nec
+  ultricies commodo, nulla ex fermentum magna, et mattis magna magna eu nisi. Quisque
+  posuere auctor quam in lobortis. Vivamus scelerisque efficitur risus, ut consectetur
+  justo tempus eu. Fusce nec eleifend nulla, sed mattis ligula. Vivamus pharetra euismod
+  mauris, sed fringilla ligula varius ac. Suspendisse potenti. Vivamus interdum blandit
+  dui, nec varius mi vehicula ut. Donec vel purus purus. Suspendisse ullamcorper sem ut
+  eros eleifend fermentum. Nulla malesuada, elit vel interdum venenatis, justo metus
+  scelerisque nulla, non auctor elit orci id nulla.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin, tortor nec
+  ultricies commodo, nulla ex fermentum magna, et mattis magna magna eu nisi. Quisque
+  posuere auctor quam in lobortis. Vivamus scelerisque efficitur risus, ut consectetur
+  justo tempus eu. Fusce nec eleifend nulla, sed mattis ligula. Vivamus pharetra euismod
+  mauris, sed fringilla ligula varius ac. Suspendisse potenti. Vivamus interdum blandit
+  dui, nec varius mi vehicula ut. Donec vel purus purus. Suspendisse ullamcorper sem ut
+  eros eleifend fermentum. Nulla malesuada, elit vel interdum venenatis, justo metus
+  scelerisque nulla, non auctor elit orci id nulla.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin, tortor nec
+  ultricies commodo, nulla ex fermentum magna, et mattis magna magna eu nisi. Quisque
+  posuere auctor quam in lobortis. Vivamus scelerisque efficitur risus, ut consectetur
+  justo tempus eu. Fusce nec eleifend nulla, sed mattis ligula. Vivamus pharetra euismod
+  mauris, sed fringilla ligula varius ac. Suspendisse potenti. Vivamus interdum blandit
+  dui, nec varius mi vehicula ut. Donec vel purus purus. Suspendisse ullamcorper sem ut
+  eros eleifend fermentum. Nulla malesuada, elit vel interdum venenatis, justo metus
+  scelerisque nulla, non auctor elit orci id nulla.
+</p>
 
 </body>
 </html>

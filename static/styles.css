@@ -25,36 +25,19 @@ div.c {
   margin: 0 auto;
 }
 
-.biography-headertext1 {
+.biography-header {
   text-align: center;
   font-size: x-large;
   padding: 10px 10px 10px 10px;
 }
 
-.biography-headertext2 {
-  text-align: justify;
-  font-size: large;
-  padding: 10px 10px 10px 10px;
-}
-
-.picturebox {
-  display: flex;
-  /* max-width: 5000px; */
-  margin: 0 auto;
-  width: 100%;
-}
-
-.picturebox-text {
+.biography-body {
   /* flex: 1; */
   text-align: justify;
   font-size: large;
   padding: 10px;
 }
-.picturebox-img {
-  max-width: 30%; /* Adjust the width as needed */
-  height: auto;
-  max-height: 30%; 
-}
+
 
 
 /* ############################################################################# */
