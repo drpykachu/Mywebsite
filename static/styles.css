@@ -19,6 +19,65 @@ div.c {
   text-indent: 30%;
 }
 
+
+/* ############################# Projects ################################## */
+.Projects-container {
+  max-width: 1366px;
+  margin: 0 auto;
+  width: 100vw; 
+}
+
+.Projects-header {
+  text-align: center;
+  font-size: xx-large;
+  padding: 10px 10px 10px 10px;
+
+}
+
+.Projects-body {
+  /* flex: 1; */
+  text-align: justify;
+  font-size: large;
+  padding: 10px;
+}
+
+.accordion-projects {
+  display: block;
+  background-color: #eee;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  border: none;
+  font-size: x-large;
+  width: 100%; /* Set width to 100% */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.active-projects,
+.accordion-projects:hover {
+  background-color: #ccc;
+}
+
+.panel-projects {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+  margin: 0 auto;
+  text-align: center;
+  font-size: large;
+  
+}
+
+.panel-projects img {
+  padding: 10px 10px 10px 10px;
+  max-width: clamp(10px, 95%, 600px);
+
+  height: auto;
+}
+
+/* ############################################################################# */
+
 /* ############################# Biography Pages ################################## */
 .biography-container {
   max-width: 1000px;
