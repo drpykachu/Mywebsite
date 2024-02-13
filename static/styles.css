@@ -69,13 +69,17 @@ div.c {
   
 }
 
-.panel-projects img {
+.panel-projects video {
   padding: 10px 10px 10px 10px;
   max-width: clamp(10px, 95%, 600px);
-
   height: auto;
 }
 
+.panel-projects img {
+  padding: 10px 10px 10px 10px;
+  max-width: clamp(10px, 95%, 600px);
+  height: auto;
+}
 /* ############################################################################# */
 
 /* ############################# Biography Pages ################################## */
