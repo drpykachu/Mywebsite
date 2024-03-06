@@ -225,8 +225,8 @@ div.c {
   /* Center items vertically */
   justify-content: center;
   /* Center items horizontally */
-  font-size: clamp(10px, 5vw, 100px);
-  height: clamp(10px, 10vw, 100px);
+  font-size: clamp(10px, 5vw, 75px);
+  height: clamp(10px, 10vw, 75px);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding-right: 9.1%;
 }
@@ -234,7 +234,7 @@ div.c {
 .heading-space {
   background-color: #eee;
   width: 100%;
-  height: clamp(10px, 1vw, 100px);
+  height: clamp(10px, 1vw, 75px);
 }
 
 
@@ -246,9 +246,9 @@ div.c {
   cursor: pointer;
   border: none;
   width: 10%;
-  font-size: clamp(8px, 5vw, 100px);
+  font-size: clamp(8px, 5vw, 75px);
   /* transition: 0.4s; */
-  height: clamp(10px, 10vw, 100px);
+  height: clamp(10px, 10vw, 75px);
 }
 
 .panel {
