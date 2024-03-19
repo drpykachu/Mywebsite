@@ -21,3 +21,68 @@ The brains of the Raspberry Pi are located in the Micro SD Card. The SD card com
 Once the operating system is installed and the pi boots up correctly, go through all the preferred settings (time zone, keyboard layout, etc.). You should now have a screen like this:
 
 ![Pi default desktop](guide/photos/pi-desktop.png)
+
+## Part 3: Installing And Setting Up The Server
+
+There are several programs that can be used to host a server, but we are going to use Flask. Flask is an easy-to-use Python package that will handle network protocols and render HTML pages.
+
+First, we must update our Pi. Open a terminal (the black square on the taskbar). Enter the commands and hit enter:
+
+<span style="display: inline-block; padding: 5px; padding-right: 50px;  background-color: black;">
+    <span style="font-weight: bold; color: white;">sudo apt update</span>
+    <br>
+    <span style="font-weight: bold; color: white;">sudo apt full-upgrade</span>
+</span>
+
+\
+*Fun Fact: "sudo" runs a program with elevated administrator rights. If you ever run into a incefficent credentials problem, using sudo will work 9/10 of the time.*
+
+Once updated and installed, we can download and make a Flask server. Open Thonny (should installed by deafult on Raspberry Pi). Thonny is a bare-bones Python IDE. Open the terminal by clicking "view" and select "Shell" and enter 
+
+<span style="display: inline-block; padding: 5px; padding-right: 50px;  background-color: black;">
+    <span style="font-weight: bold; color: white;">pip3 install Flask
+    </span>
+    <br>
+    <span style="font-weight: bold; color: white;">flask --version 
+    </span>
+</span>
+
+Flask is now installed. Close the python terminal and go back to the main terminal (the black box on the taskbar). We need to make a directory to hold all the contents for the server. Navigate to the desktop folder using the **cd** command. I created named my directory *personal_website* by using:
+
+<span style="display: inline-block; padding: 5px; padding-right: 50px;  background-color: black;">
+    <span style="font-weight: bold; color: white;">mkdir personal_website
+    </span>
+</span>
+
+Navigate into the folder via the terminal by:
+
+<span style="display: inline-block; padding: 5px; padding-right: 50px;  background-color: black;">
+    <span style="font-weight: bold; color: white;">cd personal_website
+    </span>
+</span>
+
+Within this directory, make a new Python file with Thonny called *personal_website.py*. Copy and paste this code into the new file:
+
+```python
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return 'Hello world'
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')
+```
+
+If all goes well, go back to the Pi terminal and enter 
+
+<span style="display: inline-block; padding: 5px; padding-right: 50px;  background-color: black;">
+    <span style="font-weight: bold; color: white;">sudo python3 personal_website.py
+    </span>
+</span>
+
+and the resulting output will be something similar to: 
+
+![First Flask Example](guide/photos/flask-example.png)
