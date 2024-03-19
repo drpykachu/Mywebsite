@@ -1,4 +1,4 @@
-# Person Website Guide
+# Personal Website Guide
 
 This is a guide showing the steps I took to make my personal website. I started the process of making a website several months ago, but I had problems following outdated and confusing guides. I trudged my way through several different guides and once I was done, I decided to make my own guide for those who end up in the same situation. 
 
@@ -14,6 +14,10 @@ List of items I used:
 4.) Raspberry Pi 3 Model B case (I 3D-printed mine with this [model](https://www.thingiverse.com/thing:3719217)) \
 5.) Computer equipment (monitor, mouse, keyboard)
 
-## Part 2: Installing Operating System
+## Part 2: Installing The Operating System
 
 The brains of the Raspberry Pi are located in the Micro SD Card. The SD card comes blank, so it needs to be installed with the correct operating system in order to interact with the microchips on the pi. Head over to [Raspberrypi.com](https://www.raspberrypi.com/products/raspberry-pi-3-model-b/) to install the correct operating system for your pi. You will need to download the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) to flash the operating system.
+
+Once the operating system is installed and the pi boots up correctly, go through all the preferred settings (time zone, keyboard layout, etc.). You should now have a screen like this:
+
+![alt text](http://url/to/img.png)
