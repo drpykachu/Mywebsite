@@ -20,4 +20,4 @@ The brains of the Raspberry Pi are located in the Micro SD Card. The SD card com
 
 Once the operating system is installed and the pi boots up correctly, go through all the preferred settings (time zone, keyboard layout, etc.). You should now have a screen like this:
 
-![alt text](http://url/to/img.png)
+![Pi default desktop](http://url/to/img.png)
