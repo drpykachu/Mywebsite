@@ -79,10 +79,11 @@ if __name__ == '__main__':
 If all goes well, go back to the Pi terminal and enter 
 
 <span style="display: inline-block; padding: 5px; padding-right: 50px;  background-color: black;">
-    <span style="font-weight: bold; color: white;">sudo python3 personal_website.py
+    <span style="font-weight: bold; color: white;">cd personal_website
     </span>
 </span>
 
+\ 
 and the resulting output will be something similar to: 
 
 ![First Flask Example](guide/photos/flask-example.png)
