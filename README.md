@@ -83,7 +83,7 @@ If all goes well, go back to the Pi terminal and enter
     </span>
 </span>
 
-\ 
+
 and the resulting output will be something similar to: 
 
 ![First Flask Example](guide/photos/flask-example.png)
